@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gniniarb | The Brain Relaxer</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
+    <div class="loader-brain-area">
+      <div class="loader-ring ring-one"></div>
+      <div class="loader-ring ring-two"></div>
+      <div class="loader-ring ring-three"></div>
+
+      <div class="loader-brain">🧠</div>
+
+      <span class="spark spark-one"></span>
+      <span class="spark spark-two"></span>
+      <span class="spark spark-three"></span>
+      <span class="spark spark-four"></span>
+    </div>
+
+    <p class="loader-text">Lighting up your brain...</p>
+
+    <div class="loader-progress">
+      <span></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Gniniarb home">
+      <span class="logo-main">Gnini</span><span class="logo-accent">arb</span>
+    </a>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#daily">Daily Knowledge</a>
+      <a href="#puzzles">Puzzles</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="menu-button" id="menuButton" aria-label="Open menu">
+      ☰
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#daily">Daily Knowledge</a>
+    <a href="#puzzles">Puzzles</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tagline">Puzzles + Daily Knowledge</p>
+
+        <h1>
+          Welcome to <span>Gniniarb</span>
+        </h1>
+
+        <p class="hero-description">
+          The Brain Relaxer is a calm place to train your mind with relaxing puzzles,
+          small challenges, and daily knowledge.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#puzzles" class="btn primary-btn">Explore Puzzles</a>
+          <a href="#daily" class="btn secondary-btn">Today's Knowledge</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="brain-icon" aria-hidden="true">🧠</div>
+
+        <h2>The Brain Relaxer</h2>
+
+        <p>
+          Relax your mind, sharpen your focus, and learn something new every day.
+        </p>
+      </div>
+    </section>
+
+    <section class="stats-section" aria-label="Website highlights">
+      <div class="stat-card">
+        <h3>Daily</h3>
+        <p>New knowledge</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Relaxing</h3>
+        <p>Peaceful puzzles</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Smart</h3>
+        <p>Brain training</p>
+      </div>
+    </section>
+
+    <section class="daily-section" id="daily">
+      <div class="section-title">
+        <p>Learn something small</p>
+        <h2>Daily Knowledge</h2>
+      </div>
+
+      <div class="knowledge-card">
+        <div class="knowledge-badge">Today</div>
+
+        <h3 id="knowledgeTitle">Why puzzles help your brain</h3>
+
+        <p id="knowledgeText">
+          Puzzles can help improve problem-solving, memory, focus, and pattern recognition
+          because they make your brain practice connecting information in new ways.
+        </p>
+
+        <button class="btn primary-btn" id="newKnowledgeButton">
+          Show Another Fact
+        </button>
+      </div>
+    </section>
+
+    <section class="puzzles-section" id="puzzles">
+      <div class="section-title">
+        <p>Choose your challenge</p>
+        <h2>Puzzle Library</h2>
+      </div>
+
+      <div class="filter-buttons" aria-label="Puzzle filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="logic">Logic</button>
+        <button class="filter-btn" data-filter="math">Math</button>
+        <button class="filter-btn" data-filter="word">Word</button>
+        <button class="filter-btn" data-filter="memory">Memory</button>
+      </div>
+
+      <div class="puzzle-grid" id="puzzleGrid">
+        <!-- Puzzle cards are created from js/script.js -->
+      </div>
+    </section>
+
+    <section class="add-section">
+      <div class="add-card">
+        <h2>Want to add more games?</h2>
+
+        <p>
+          Add new game pages inside the <strong>games</strong> folder, then connect them
+          in <strong>js/script.js</strong> by changing the puzzle card link.
+        </p>
+
+        <a href="#puzzles" class="btn secondary-btn">View Puzzle Library</a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section-title">
+        <p>About the website</p>
+        <h2>What is Gniniarb?</h2>
+      </div>
+
+      <div class="about-content">
+        <p>
+          Gniniarb is a sleek blue-themed puzzle and knowledge website. It is designed
+          to feel relaxing, clean, and easy to use. The goal is to give visitors a calm
+          space where they can solve puzzles, learn quick facts, and refresh their mind.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Gniniarb | The Brain Relaxer</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

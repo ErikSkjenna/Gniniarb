@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Quick Math | Gniniarb</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/quick-math.css" />
+</head>
+
+<body>
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading page">
+    <div class="loader-brain-area">
+      <div class="loader-ring ring-one"></div>
+      <div class="loader-ring ring-two"></div>
+      <div class="loader-ring ring-three"></div>
+
+      <div class="loader-brain">🧠</div>
+
+      <span class="spark spark-one"></span>
+      <span class="spark spark-two"></span>
+      <span class="spark spark-three"></span>
+      <span class="spark spark-four"></span>
+    </div>
+
+    <p class="loader-text">Lighting up your brain...</p>
+
+    <div class="loader-progress">
+      <span></span>
+    </div>
+  </div>
+
+  <header class="game-header">
+    <a href="../index.html" class="logo" aria-label="Back to Gniniarb home">
+      <span class="logo-main">Gnini</span><span class="logo-accent">arb</span>
+    </a>
+
+    <a href="../index.html" class="home-link">← Home</a>
+  </header>
+
+  <main>
+    <section class="game-shell">
+      <div class="title-area">
+        <div class="badge">Quick Math</div>
+
+        <h1>Daily Math IQ Challenge</h1>
+
+        <p class="subtitle">
+          Answer 25 math questions of increasing difficulty. You have 40 seconds total.
+          You can only complete this challenge once per day.
+        </p>
+      </div>
+
+      <section class="panel start-panel" id="startPanel">
+        <h2>Ready to test your brain?</h2>
+
+        <p>
+          Once you press start, your daily attempt begins. Closing or refreshing the page
+          will not reset your attempt.
+        </p>
+
+        <div class="rules">
+          <div class="rule-card">
+            <strong>25</strong>
+            <span>Questions</span>
+          </div>
+
+          <div class="rule-card">
+            <strong>40s</strong>
+            <span>Total Time</span>
+          </div>
+
+          <div class="rule-card">
+            <strong>1x</strong>
+            <span>Per Day</span>
+          </div>
+        </div>
+
+        <button class="btn primary-btn" id="startButton">Start Challenge</button>
+      </section>
+
+      <section class="panel game-panel" id="gamePanel">
+        <div class="game-top">
+          <div class="info-box">
+            <span>Question</span>
+            <strong id="questionCounter">1 / 25</strong>
+          </div>
+
+          <div class="info-box">
+            <span>Correct</span>
+            <strong id="scoreCounter">0</strong>
+          </div>
+
+          <div class="info-box">
+            <span>Time</span>
+            <strong id="timeCounter">40</strong>
+          </div>
+        </div>
+
+        <div class="timer-bar">
+          <div class="timer-fill" id="timerFill"></div>
+        </div>
+
+        <div class="question-card">
+          <p class="question-label">Solve this</p>
+
+          <div class="question" id="questionText">8 + 4</div>
+
+          <form class="answer-form" id="answerForm">
+            <input
+              type="number"
+              class="answer-input"
+              id="answerInput"
+              placeholder="Your answer"
+              autocomplete="off"
+              required
+            />
+
+            <button class="btn primary-btn" type="submit">Submit</button>
+          </form>
+
+          <p class="feedback" id="feedback"></p>
+        </div>
+      </section>
+
+      <section class="panel result-panel hidden" id="resultPanel">
+        <h2>Your Daily Math IQ</h2>
+
+        <div class="iq-number" id="iqNumber">100</div>
+
+        <p id="resultMessage">
+          Your result has been saved on this computer for today.
+        </p>
+
+        <div class="result-grid">
+          <div class="result-stat">
+            <strong id="finalCorrect">0</strong>
+            <span>Correct</span>
+          </div>
+
+          <div class="result-stat">
+            <strong id="finalAnswered">0</strong>
+            <span>Answered</span>
+          </div>
+
+          <div class="result-stat">
+            <strong id="finalTime">0s</strong>
+            <span>Time Used</span>
+          </div>
+        </div>
+
+        <a href="../index.html" class="btn secondary-btn">Back to Gniniarb</a>
+      </section>
+
+      <section class="panel locked-panel hidden" id="lockedPanel">
+        <h2>You already completed today’s challenge</h2>
+
+        <p>
+          Your Math IQ for today is already saved on this computer.
+          Come back tomorrow for a new attempt.
+        </p>
+
+        <div class="iq-number" id="savedIqNumber">100</div>
+
+        <div class="result-grid">
+          <div class="result-stat">
+            <strong id="savedCorrect">0</strong>
+            <span>Correct</span>
+          </div>
+
+          <div class="result-stat">
+            <strong id="savedAnswered">0</strong>
+            <span>Answered</span>
+          </div>
+
+          <div class="result-stat">
+            <strong id="savedDate">Today</strong>
+            <span>Date</span>
+          </div>
+        </div>
+
+        <a href="../index.html" class="btn secondary-btn">Back to Gniniarb</a>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Gniniarb | The Brain Relaxer</p>
+  </footer>
+
+  <script src="../js/quick-math.js"></script>
+</body>
+</html>
