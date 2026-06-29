@@ -116,8 +116,8 @@ const puzzles = [
     title: "Number Sequence",
     category: "math",
     icon: "🔢",
-    description: "Find the hidden pattern in a sequence of numbers.",
-    link: "#"
+    description: "Complete 15 number patterns. Your IQ score is based on accuracy and speed.",
+    link: "games/number-sequence.html"
   },
   {
     title: "Logic Riddle",
